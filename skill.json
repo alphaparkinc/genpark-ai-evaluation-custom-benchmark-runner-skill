@@ -1,0 +1,35 @@
+{
+  "name": "genpark-ai-evaluation-custom-benchmark-runner-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-world AI task evaluation, custom benchmark suite runner & model accuracy scorer.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "ai-evaluations",
+    "custom-benchmarks",
+    "model-accuracy",
+    "eval-suite",
+    "ph-august11"
+  ],
+  "inputs": {
+    "test_dataset_path": {
+      "type": "string"
+    },
+    "target_model_endpoint": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "accuracy_score_pct": {
+      "type": "number"
+    },
+    "total_evals_passed": {
+      "type": "integer"
+    },
+    "benchmark_report": {
+      "type": "object"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
